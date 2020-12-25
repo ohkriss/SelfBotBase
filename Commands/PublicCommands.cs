@@ -22,10 +22,10 @@ namespace SelfBotBase.Commands
     public class Avatar : CommandBase
     {
         [Parameter("user")]
-        public ulong UserId { get; set; }
+        public ulong User { get; set; }
         public override async void Execute()
         {
-            var user = await Client.GetUserAsync(UserId);
+            var user = await Client.GetUserAsync(User);
             EmbedMaker emb = new()
             {
                 Title = user.ToString(),
