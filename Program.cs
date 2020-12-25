@@ -8,8 +8,8 @@ namespace SelfBotBase
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-        }
+        public static Bot Bot { get; internal set; }
+        static Task Main(string[] args)
+            => (Bot = new()).Initialize();
     }
 }
