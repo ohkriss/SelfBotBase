@@ -57,7 +57,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bot.cs" />
+    <Compile Include="Commands\PublicCommands.cs" />
     <Compile Include="Config.cs" />
+    <Compile Include="EventListeners\LoggedIn.cs" />
+    <Compile Include="Logic\DiscordEventAttribute.cs" />
+    <Compile Include="Logic\DiscordEventHandler.cs" />
+    <Compile Include="Logic\EventType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

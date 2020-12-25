@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SelfBotBase.Logic
 {
-    class DiscordEventHandler
+    public class DiscordEventHandler
     {
         public static IEnumerable<DiscordEventMethod> DiscordEventMethods { get; private set; }
 

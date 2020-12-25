@@ -47,6 +47,7 @@ namespace SelfBotBase
 
             DiscordEventHandler.Install(Client, this);
 
+            Client.CreateCommandHandler(";");
             Client.Login(Config.Token);
 
             await Task.Delay(Timeout.Infinite);
