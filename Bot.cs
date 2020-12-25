@@ -9,6 +9,7 @@ using Discord;
 using Discord.Gateway;
 using Discord.WebSockets;
 using Newtonsoft.Json;
+using SelfBotBase.Logic;
 
 namespace SelfBotBase
 {
@@ -43,6 +44,8 @@ namespace SelfBotBase
             {
                 Cache = true
             });
+
+            DiscordEventHandler.Install(Client, this);
 
             Client.Login(Config.Token);
 
